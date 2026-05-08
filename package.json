@@ -1,7 +1,13 @@
 {
   "name": "buge",
   "version": "0.1.0",
+  "description": "不搁是一款面向校园任务和 DDL 管理的 AI 智能助手 Demo。",
   "private": false,
+  "homepage": "https://CharlesLiuZC.github.io/Buge_demo/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CharlesLiuZC/Buge_demo.git"
+  },
   "packageManager": "pnpm@10.33.4",
   "scripts": {
     "dev": "next dev",
