@@ -33,6 +33,26 @@ https://CharlesLiuZC.github.io/Buge_demo/
 - `/demo`：可交互移动端 Demo。
 - `/intro`：保留原始介绍页，便于对照早期版本。
 
+## 仓库结构说明
+
+| 路径 | 作用 |
+| --- | --- |
+| `.github/` | GitHub Actions 与 Pages 自动部署配置。 |
+| `app/` | Next.js 页面路由、主页、Demo 页和全局样式入口。 |
+| `components/` | 产品业务组件和基础 UI 组件。 |
+| `hooks/` | 可复用 React Hook。 |
+| `lib/` | 模拟数据、类型定义和通用工具函数。 |
+| `public/` | 图标、占位图和公开静态资源。 |
+| `styles/` | 兼容保留的样式目录。 |
+| `.gitignore` | 规定哪些本地生成文件不进入仓库。 |
+| `components.json` | shadcn/ui 组件生成、路径别名和图标库配置。 |
+| `next-env.d.ts` | Next.js 自动生成的 TypeScript 环境声明。 |
+| `next.config.mjs` | Next.js 静态导出与 GitHub Pages 子路径配置。 |
+| `package.json` | 项目脚本、依赖、包管理器和仓库元信息。 |
+| `pnpm-lock.yaml` | pnpm 依赖锁文件，保证部署环境安装结果一致。 |
+| `postcss.config.mjs` | Tailwind CSS 的 PostCSS 插件配置。 |
+| `tsconfig.json` | TypeScript 编译选项和 `@/*` 路径别名配置。 |
+
 ## 技术栈
 
 - Next.js
