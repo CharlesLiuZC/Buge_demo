@@ -1,5 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema.json",
+  "description": "shadcn/ui 组件生成、路径别名和 lucide 图标库配置",
   "style": "new-york",
   "rsc": true,
   "tsx": true,
