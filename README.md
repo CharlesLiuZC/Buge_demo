@@ -1,37 +1,82 @@
-# 不搁
+# 不搁 Buge - AI 原生校园 DDL 行动管家
 
-不搁是一款面向校园场景的 AI 智能助手 Demo。它尝试解决大学生日常学习中最常见的三个问题：群消息太分散、任务信息难整理、DDL 容易被遗忘。
+本项目为纯前端高保真 Demo，旨在展示“不搁”AI 智能助手在校园任务管理、群消息解析、DDL 提醒和移动端日程统筹中的核心交互流。
 
-项目首页提供完整介绍，交互 Demo 展示移动端任务看板、消息识别、任务管理、日程安排、提醒通知和设置等核心界面。
+🔗 在线主页：[https://CharlesLiuZC.github.io/Buge_demo/](https://CharlesLiuZC.github.io/Buge_demo/)
 
-## 在线主页
+📱 交互 Demo：[https://CharlesLiuZC.github.io/Buge_demo/demo/](https://CharlesLiuZC.github.io/Buge_demo/demo/)
 
-上传到 GitHub 并启用 GitHub Pages 后，主页链接格式为：
+📦 GitHub 仓库：[https://github.com/CharlesLiuZC/Buge_demo](https://github.com/CharlesLiuZC/Buge_demo)
 
-```text
-https://<你的 GitHub 用户名>.github.io/<仓库名>/
-```
+## 产品背景与愿景
 
-如果仓库名使用 `Buge_demo`，示例链接为：
+在大学校园里，任务并不会只出现在一个地方。课程群、班级群、社团群、实习群、飞书项目群和老师私聊不断产生新的通知，而真正需要执行的事项往往藏在一句自然语言里：
 
-```text
-https://CharlesLiuZC.github.io/Buge_demo/
-```
+- “周五晚 6 点前交实验报告”
+- “下周三 A301 开会”
+- “明天下午 3 点准备项目中期汇报”
+- “论文终稿 5 月 15 日截止”
 
-## 核心功能
+这些信息分散、格式不统一、时间表达模糊，最终会变成学生的“时间统筹认知负荷”。
 
-- 多平台消息聚合：围绕 QQ、微信、飞书等群消息场景，集中呈现课程、社团、实习和项目通知。
-- AI 任务识别：从自然语言消息中提取任务名称、截止时间、来源平台和优先级。
-- DDL 时间线：按截止时间展示近期任务，帮助用户快速判断轻重缓急。
-- 智能日程建议：根据任务密度和优先级给出当日安排建议。
-- 提醒通知：展示任务临近、AI 识别、同步状态等通知类型。
-- 移动端体验：以手机端任务助手为主要交互形态，适合校园高频使用场景。
+“不搁”希望把 AI 的自然语言理解能力和轻量 GTD 任务管理方法结合起来，成为一个能从消息里自动识别任务、整理 DDL、生成提醒和日程建议的校园行动管家。它的目标不是再造一个复杂日历，而是帮学生把“看到通知”到“安排行动”之间的空白补上。
 
-## 页面结构
+## 核心业务亮点
 
-- `/`：项目介绍主页，适合作为 GitHub Pages 展示页。
-- `/demo`：可交互移动端 Demo。
-- `/intro`：保留原始介绍页，便于对照早期版本。
+### 1. 全域消息聚合与任务识别
+
+围绕 QQ、微信、飞书等高频校园消息入口，Demo 模拟了多平台群消息同步场景。
+
+- 自动识别消息中的任务标题、截止时间、来源平台和发送人。
+- 将非结构化群聊通知转化为可管理的任务卡片。
+- 支持课程、社团、实习、项目、论文、缴费等典型校园任务类型。
+- 在消息卡片中展示 AI 提取结果，让用户确认“这条消息为什么被识别为任务”。
+
+### 2. DDL 看板与轻量任务管理
+
+“不搁”的核心体验是把分散任务收束成一个可扫描的移动端看板。
+
+- 首页展示总任务、待处理任务、临近截止和消息同步统计。
+- 任务管理页支持按状态和优先级查看任务。
+- DDL 时间线按截止时间排序，帮助用户快速判断轻重缓急。
+- 任务卡片保留来源平台，方便从任务反查原始消息语境。
+
+### 3. AI 日程建议与提醒通知
+
+Demo 中内置了 AI 建议与通知流，用来表达未来智能体能力。
+
+- 根据任务紧急程度生成“今日建议”。
+- 对高优先级任务给出提前准备提示。
+- 在通知页集中展示 DDL 提醒、AI 识别、同步状态和系统通知。
+- 为后续接入真实提醒推送、日历同步和多端通知预留交互空间。
+
+### 4. 移动端优先的校园助手体验
+
+校园任务往往发生在手机场景中，因此 Demo 采用移动端优先的交互模型。
+
+- 底部导航覆盖首页、消息、任务、提醒和设置。
+- 单屏信息密度适合碎片时间快速查看。
+- 暗色科技风视觉语言强化 AI 助手与效率工具定位。
+- GitHub Pages 首页负责产品介绍，`/demo` 页面负责可交互体验。
+
+## Demo 页面结构
+
+- `/`：产品介绍主页，适合作为 GitHub Pages 项目首页。
+- `/demo`：高保真移动端交互 Demo。
+- `/intro`：早期介绍页，保留用于版本对照。
+
+## 技术架构与技术栈
+
+本 Demo 聚焦前端状态流转和产品表达，不依赖真实后端服务。
+
+- 框架：Next.js App Router + React
+- 语言：TypeScript
+- 样式：Tailwind CSS
+- 基础组件：Radix UI / shadcn UI 风格组件
+- 图表：Recharts
+- 图标：Lucide Icons
+- 数据：本地 Mock Data
+- 部署：GitHub Pages + GitHub Actions 静态导出
 
 ## 仓库结构说明
 
@@ -53,46 +98,55 @@ https://CharlesLiuZC.github.io/Buge_demo/
 | `postcss.config.mjs` | Tailwind CSS 的 PostCSS 插件配置。 |
 | `tsconfig.json` | TypeScript 编译选项和 `@/*` 路径别名配置。 |
 
-## 技术栈
-
-- Next.js
-- React
-- TypeScript
-- Tailwind CSS
-- Radix UI
-- Recharts
-- Lucide Icons
-
-## 本地运行
+## 快速本地运行
 
 ```bash
-npm install
-npm run dev
+pnpm install
+pnpm run dev
 ```
 
-开发服务器启动后访问：
+启动后访问：
 
 ```text
 http://localhost:3000
 ```
 
+如果本地没有 pnpm，也可以使用：
+
+```bash
+npx pnpm@10.33.4 install
+npx pnpm@10.33.4 run dev
+```
+
 ## 本地构建
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 构建产物会输出到 `out/`，可直接用于静态站点托管。
 
-## 上传到 GitHub Pages
+## GitHub Pages 部署
 
-1. 在 GitHub 新建仓库，例如 `Buge_demo`。
-2. 将本项目目录中的所有文件提交到仓库默认分支。
-3. 打开仓库的 `Settings -> Pages`。
-4. 在 `Build and deployment` 中选择 `GitHub Actions`。
-5. 推送到 `main` 或 `master` 后，工作流会自动构建并部署。
-6. 部署完成后，GitHub Actions 的 `deploy` 任务会输出主页链接。
+本仓库已经配置 `.github/workflows/pages.yml`：
+
+1. 推送到 `main` 分支。
+2. GitHub Actions 自动安装依赖。
+3. 执行 `pnpm run build` 生成静态站点。
+4. 将 `out/` 发布到 GitHub Pages。
+
+部署完成后访问：
+
+[https://CharlesLiuZC.github.io/Buge_demo/](https://CharlesLiuZC.github.io/Buge_demo/)
 
 ## 项目定位
 
-当前版本是前端展示和交互原型，重点用于产品概念说明、演示评审和页面展示。后续可以继续接入真实机器人、消息解析服务、用户登录、任务同步和提醒推送能力。
+当前版本是前端展示与交互原型，重点用于产品概念说明、演示评审和页面展示。
+
+后续可以继续扩展：
+
+- 接入真实 QQ / 微信 / 飞书机器人或消息导入能力。
+- 增加真实 AI 解析服务与任务置信度判断。
+- 接入用户登录、云端任务同步和多端提醒。
+- 引入课程表约束，升级为冲突检测与智能排程。
+- 增加任务撤回、暂存、二次编辑和习惯快捷键。
