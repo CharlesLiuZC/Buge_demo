@@ -303,7 +303,7 @@ export default function IntroPage() {
               <ArrowRight className="w-5 h-5" />
             </Link>
             <a
-              href="https://github.com/Johnny-Zz/Buge_demo"
+              href="https://github.com/CharlesLiuZC/Buge_demo"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-secondary text-foreground font-semibold text-lg hover:bg-secondary/80 transition-all"

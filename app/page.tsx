@@ -80,7 +80,7 @@ export default function HomePage() {
                 <ArrowRight className="h-4 w-4" />
               </Link>
               <a
-                href="https://github.com/Johnny-Zz/Buge_demo"
+                href="https://github.com/CharlesLiuZC/Buge_demo"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-md border border-border bg-card px-5 py-3 text-sm font-semibold text-foreground transition hover:bg-secondary"
