@@ -13,6 +13,7 @@ export interface Message {
   hasDeadline: boolean
   extractedDeadline?: Date
   extractedTask?: string
+  extractedPriority?: TaskPriority
   isRead: boolean
   groupName?: string
 }
