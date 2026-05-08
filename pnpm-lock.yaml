@@ -1,3 +1,4 @@
+# Locks the exact dependency graph for reproducible local builds and GitHub Pages deployments.
 lockfileVersion: '9.0'
 
 settings:
