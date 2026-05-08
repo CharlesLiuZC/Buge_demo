@@ -10,6 +10,7 @@ __v0_jsx-dev-runtime.ts
 .env*.local
 
 # Common ignores
+# 本地依赖、构建产物和运行日志不上传到 GitHub。
 node_modules
 .next/
 out/
