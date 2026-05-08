@@ -15,7 +15,7 @@ https://<你的 GitHub 用户名>.github.io/<仓库名>/
 如果仓库名使用 `Buge_demo`，示例链接为：
 
 ```text
-https://Johnny-Zz.github.io/Buge_demo/
+https://CharlesLiuZC.github.io/Buge_demo/
 ```
 
 ## 核心功能
